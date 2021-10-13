@@ -183,9 +183,9 @@
     <module>shell</module>
     <module>stress</module>
     <module>table</module>
-    <module>tests</module>
+<!--    <module>tests</module>-->
     <module>underfs</module>
-    <module>webui</module>
+<!--    <module>webui</module>-->
   </modules>
 
   <dependencyManagement>
@@ -1296,23 +1296,23 @@
       </plugin>
 
       <!-- Prevent Windows line endings -->
-      <plugin>
-        <artifactId>exec-maven-plugin</artifactId>
-        <groupId>org.codehaus.mojo</groupId>
-        <inherited>false</inherited>
-        <executions>
-          <execution>
-            <id>Check that there are no Windows line endings</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>${build.path}/style/check_no_windows_line_endings.sh</executable>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <artifactId>exec-maven-plugin</artifactId>-->
+<!--        <groupId>org.codehaus.mojo</groupId>-->
+<!--        <inherited>false</inherited>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>Check that there are no Windows line endings</id>-->
+<!--            <phase>compile</phase>-->
+<!--            <goals>-->
+<!--              <goal>exec</goal>-->
+<!--            </goals>-->
+<!--            <configuration>-->
+<!--              <executable>${build.path}/style/check_no_windows_line_endings.sh</executable>-->
+<!--            </configuration>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
     </plugins>
   </build>
 
